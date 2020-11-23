@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background-color: #fafafa;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+.page-container {
+  padding: 12px 20px;
+}
+.page-container-title {
+  position: relative;
+  font-size: 13px;
+  line-height: 20px;
+  color: #646a73;
+  user-select: none;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -10px;
+    border-left: 3px solid #3370ff;
+    height: 12px;
+  }
+}
+.has-error {
+  border-color: #f5222d !important;
+}
+
+// 右方滑入
+.right-fade-enter{
+  transform: translateX(100%);
+}
+.right-fade-leave-to{
+  transform: translateX(100%);
+}
+
+// 左方滑入
+.left-fade-enter{
+  transform: translateX(-100%);
+}
+.left-fade-leave-to{
+  transform: translateX(-100%);
+}
+
+// 上方滑入
+.top-fade-enter{
+  transform: translateY(-100%);
+}
+.top-fade-leave-to{
+  transform: translateY(-100%);
+}
+
+// 下方滑入
+.bottom-fade-enter{
+  transform: translateY(100%);
+}
+.bottom-fade-leave-to{
+  transform: translateY(100%);
+}
+
+// 淡入淡出
+.fade-in-enter,.fade-in-leave-to{
+  opacity: 0;
+}
+.fade-in-enter-to,.fade-in-leave{
+  opacity: 1;
+}
+
+
+.right-fade-enter-active,
+.right-fade-leave-active,
+.left-fade-enter-active,
+.left-fade-leave-active,
+.top-fade-enter-active,
+.top-fade-leave-active,
+.bottom-fade-enter-active,
+.bottom-fade-leave-active,
+.fade-in-enter-active,
+.fade-in-leave-active
+{
+  transition: all 0.15s ease-in;
+}
+
+.brand-color {
+  color: #409EFF;
+}
+.success-color {
+  color: #13ce66;
+}
+.warning-color {
+  color: #E6A23C;
+}
+.danger-color {
+  color: #F56C6C;
+}
+.info-color {
+  color: #909399;
+}
+.normal-info-color {
+  color: #606266;
+}
+.deep-info-color {
+  color: #303133;
+}
+
+.old-lace {
+  background-color: rgba(253, 245, 230, 0.4);
+}
+.yellow {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.light-green {
+  background-color: rgba(144, 238, 144, 0.4);
+}
+.light-sky-blue {
+  background-color: rgba(135, 206, 250, 0.4);
+}
+.violet {
+  background-color: rgba(238, 130, 238, 0.4);
+}
+.deep-pink {
+  background-color: rgba(255, 20, 147, 0.4);
+}
